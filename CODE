@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head lang="en">
+		<meta name="media" content="mobile">
+			<title>Hey! My Name Is Maxim</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+				padding: 0px;
+				margin: 0px;
+			}
+
+			body {
+				background: #CD5C5C;
+			}
+
+  			.navbar li {
+  				display: inline-block;
+  				margin-left: 52.5px;
+  				color: #CD5C5C;
+  				font-family: sans-serif;
+  				font-size: 12px;
+  			}
+
+			.navbar {
+  				width: 100%;
+  				margin: 0 auto;
+  				background-color: #D3D3D3;
+  				line-height: 50px;
+  				margin: 0;
+  				padding: 0;
+  				list-style: none;
+  			}
+
+			.wrapper {
+				width: 100%;
+			}
+
+			.welcome-section {
+				width: 100%;
+			}
+
+			.wrapper h1 {
+				padding: 0px 30px 20px;
+				font-family: sans-serif;
+				font-size: 50px;
+				color: #CD5C5C;
+				line-height: 44px;
+				padding-top: 50px;
+				text-align: center;
+			}
+
+			.wrapper h3 {
+				padding: 30px 30px 20px;
+				font-family: sans-serif;
+				font-size: 28px;
+				color: #CD5C5C;
+				line-height: 44px;
+			}
+
+			.wrapper p {
+				padding: 0px 30px 20px;
+				font-family: sans-serif;
+				font-size: 16px;
+				color: #CD5C5C;
+			}
+
+			p {
+				font-family: sans-serif;
+				font-size: 20px;
+				text-align: center;
+				color: #262626;
+				padding-bottom: 70px;
+			}
+
+			.project-image {
+				width: 100%;
+			}
+
+			.btn_btn-show-all {
+  				width: 80px;
+  				display: inline-block;
+  				margin: 5% 20px;
+  				text-align: center;
+  				font-size: 10px;
+  				font-weight: bold;
+  				color: #CD5C5C;
+  				position: relative;
+  				text-decoration: none;
+  				letter-spacing: 1.5px;
+  				border: 2px;
+  			}
+
+			.contact-links a {
+  				color: #CD5C5C;
+  				display: inline-block;
+  				margin-left: 50px;
+  				padding-top: 20px;
+  				padding-bottom: 20px;
+  				padding-left: 0px;
+  				background: #CD5C5C;
+  			}
+
+			@media only screen and (min-width: 768px) {
+			.navbar {
+  				width: 100%;
+  				margin: 0 auto;
+  			}
+
+  			.navbar li {
+  				margin-left: 70px;
+  			}
+
+  			a {
+				font-size: 16px;
+				color: #CD5C5C;
+			}
+
+			.wrapper {
+				
+				margin: 0 auto;
+			}
+
+			.wrapper h1 {
+				padding: 20px 0px 0px;
+			}
+
+			.wrapper h3 {
+				padding: 20px 0px 0px;
+			}
+
+			.wrapper p {
+				padding: 20px 0px 0px;
+			}
+
+			.project-image {
+				padding-top: 30px;
+			}
+
+			p {
+				padding: 0px 30px 20px;
+				font-family: sans-serif;
+				font-size: 22px;
+				color: #262626;
+			}
+			}
+
+			@media only screen and (min-width: 1024px) {
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.navbar {
+  				width: 100%;
+  				margin: 0 auto;
+  			}
+
+  			nav {
+  				background-color: #D3D3D3;
+  				padding: 0px;
+  			}
+
+  			nav ul {
+  				margin: 0;
+  				padding: 0;
+  				list-style: none;
+  			}
+
+  			nav li {
+  				display: inline-block;
+  				margin-left: 70px;
+  			}
+
+  			li {
+  				color: #CD5C5C;
+  			}
+
+  			a {
+				font-size: 16px;
+				color: #772626;
+			}
+
+			p {
+				font-size: 22px;
+				color: #CD5C5C;
+			}
+
+			.wrapper {
+				width: 100%;
+				background: #CD5C5C;
+				font-family: sans-serif;
+				line-height: 1.4;
+			}
+
+			.wrapper h1 {
+				padding-top: 350px;
+				font-family: sans-serif;
+				text-align: center;
+				color: #262626
+			}
+
+			.wrapper h3 {
+				font-family: sans-serif;
+				text-align: center;
+				font-size: 22px;
+				color: #772626;
+			}
+
+			.wrapper p {
+				font-family: sans-serif;
+				font-size: 22px;
+				text-align: center;
+				color: #262626;
+			}
+
+			#box-1 {
+				grid-area: advert;
+				grid-row: 1 / 4;
+				font-family: sans-serif;
+				font-size: 22px;
+				text-align: center;
+				color: #772626;
+
+			}
+
+			#welcome-section {
+  				height: 850px;
+  				width: 100%;
+  			}
+
+  			.project-image {
+				padding-top: 20px;
+			}
+
+			#box-container {
+				height: 850px;
+    			width: 100%;
+    			background: #262626;
+    			display: grid;
+    			grid-template-columns: 150px 350px 350px 350px; 
+    			grid-template-rows: 230px 230px 230px;
+    			grid-template-areas: 
+     				"advert header header header"
+    				"advert content content content"
+    				"advert footer footer footer";
+    			grid-gap: 50px 80px;
+    			box-shadow: 0px 5px #C1FFC1;
+
+			}
+
+			.btn_btn-show-all {
+  				width: 180px;
+  				display: inline-block;
+  				margin: 5% 20px;
+  				text-align: center;
+  				font-size: 16px;
+  				font-weight: bold;
+  				color: #67ffff;
+  				position: relative;
+  				text-decoration: none;
+  				letter-spacing: 1.5px;
+  				border: 2px;
+  			}
+
+  			.contact-section-header {
+  				width: 100%;
+  				display: inline-block;
+  				margin-left: 100px;
+				font-family: 'Raleway', sans-serif;
+				font-size: 16px;
+				color: #D3D3D3;
+				line-height: 20px;
+  				background: #CD5C5C;
+  				margin: 0 auto;
+  				padding-top: 2px;
+  			}
+
+  			.contact-links a {
+  				color: #C1FFC1;
+  				display: inline-block;
+  				margin-left: 100px;
+  				padding-top: 20px;
+  				padding-bottom: 20px;
+  				padding-left: 0px;
+  				background: #CD5C5C;
+  			}
+  			}
+    </style>
+	</head>
+	<body>
+	<div class="wrapper">
+		<nav class="navbar">
+			<ul>
+				<li>
+					<a href="#welcome-section">About</a>
+				</li>
+				<li>
+					<a href="#projects" class="portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="welcome-section">
+			<h1>Hey! My Name Is Maxim</h1>
+			<p>I am softwere developer</p>
+      
+		</section>
+	</div>
+
+		<section id="projects" class="welcome-section">
+			<h6>.</h6>
+			<div id="box-container" class="projects-grid">
+				<p id="box-1" class="portfolio-header">Here is our projects</p>
+				<a href="https://codepen.io/maxim_kuc/full/zYYJPLJ" target="_blank" class="project-tile">
+					<img id="box-2" class="project-image" src="https://github.com/Maksymos/Tribute-Page/blob/master/Screen%20Shot%202019-11-30%20at%206.18.28%20PM.png?raw=true" alt="progect1">
+					<p class="project-tile">Tribute Page</p>
+				</a>
+				<a href="https://codepen.io/maxim_kuc/full/vYEBxjX" target="_blank" class="project-tile">
+					<img id="box-3" class="project-image" src="https://github.com/Maksymos/Survay-Form/blob/master/Screen%20Shot%202019-11-30%20at%206.18.57%20PM.png?raw=true" alt="progect2">
+					<p class="project-tile">Surway Form</p>
+				</a>
+				<a href="https://codepen.io/maxim_kuc/full/YzPKZJp" target="_blank" class="project-tile">
+					<img id="box-4" class="project-image" src="https://github.com/Maksymos/Landing-Page/blob/master/Screen%20Shot%202019-11-30%20at%206.16.55%20PM.png?raw=true" alt="progect3">
+					<p class="project-tile">Landing Page</p>
+				</a>
+				<a href="https://codepen.io/maxim_kuc/full/xxbKqQb" target="_blank" class="project-tile">
+					<img id="box-5" class="project-image" src="https://github.com/Maksymos/Technical-Documentation-Page/blob/master/Screen%20Shot%202019-11-30%20at%206.19.29%20PM.png?raw=true" alt="progect4">
+					<p class="project-tile">Technical Documentation Page</p>
+				</a>
+			</div><br>
+			
+		</section>
+		<section id="contact" class="contact-section">
+			<h6>.</h6>
+				<a style="background-color: black; border-bottom: 1px; border-radius: 12px" href="https://codepen.io/maxim_kuc" class="btn_btn-show-all" id="profile-link" target="_blank">
+				"Show all"
+				<i class="fas fa-chevron-right">
+				</i>
+				</a>
+		</section>
+			<div class="contact-links">
+				<h3 class="contact-section-header">Contacts</h3>
+				<code>
+				<a href="https://www.facebook.com/maksym.kuts.7" target="_blank">Facebook</a>
+				<a href="tel:917-603-8946" class="btn contact-details" target="_blank">Call me</a>
+				<a href="https://twitter.com/Maxim57118311" target="_blank">Tweet me</a>
+				</code>
+			</div>
+	</body>
+</html>
